@@ -2,9 +2,9 @@ FROM node
 
 WORKDIR /app
 
-RUN npm i -y
+COPY package*.json /app
 
-COPY . /app
+RUN npm i -y
 
 EXPOSE 3000
 
