@@ -6,7 +6,7 @@ COPY package.json /app
 
 RUN npm i -y
 
-copy . /app
+COPY . /app
 
 EXPOSE 3000
 
